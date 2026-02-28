@@ -172,6 +172,7 @@ Original Space:        Rotated Space:
 
 ```
 640 features → 8 × 640 = 5,120 features
+So the 8 channels are 8 differently-weighted views of the same input, not copies.
 
 Why expand?
 - More capacity to represent complex patterns

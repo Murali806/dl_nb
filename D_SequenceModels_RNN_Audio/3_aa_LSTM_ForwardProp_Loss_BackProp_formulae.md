@@ -220,7 +220,7 @@ where c is the correct class index
 L_t = -Σᵢ target_t[i] × log(y_t[i])
 
 Since target_t[i] = 0 for all i ≠ c, this simplifies to:
-L_t = -log(y_t[c])
+L_t = -log(y_t[c])q
 ```
 
 **Total loss over sequence:**
@@ -232,7 +232,7 @@ L = (1/T) × Σₜ L_t
 
 ## Backpropagation Through Time (BPTT)
 
-### Gradient of Loss w.r.t. Output
+```### Gradient of Loss w.r.t. Output
 
 ```
 Matrix Dimensions: odx1
@@ -291,7 +291,7 @@ where dh_next comes from backprop through time
 Step 1: Gradient w.r.t. o_t (before sigmoid)
 
 ∂L_t/∂o_t = ∂L_t/∂h_t * tanh(C_t)
-          = dh_t * tanh(C_t)
+qq          = dh_t * tanh(C_t)
 
 where * is element-wise multiplication
 ```
